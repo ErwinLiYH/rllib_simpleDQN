@@ -1,8 +1,8 @@
 # Simple DQN
 
->> minimal implementation of DQN in Ray/rllib
+> minimal implementation of DQN in Ray/rllib
 
->> This is modified from rllib_contrib's simpleQ.
+> This is modified from rllib_contrib's simpleQ.
 
 Tested with ray 2.32.0
 
