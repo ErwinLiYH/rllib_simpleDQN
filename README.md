@@ -1,6 +1,7 @@
 # Simple DQN
 
 >> minimal implementation of DQN in Ray/rllib
+
 >> This is modified from rllib_contrib's simpleQ.
 
 Tested with ray 2.32.0
@@ -27,7 +28,7 @@ config = (
         gamma = 0,
         train_batch_size = 64,    # sample batch size
         lr = 1e-3,
-        collect_size = 6000,      # interact n step with env (env_step) before a train_step
+        collect_size = 6000,      # interact n step with env (env_step) in a train_step
         train_times_per_step = 1  # sample and train n times per env_step in one train_step
                                   # for example train_times_per_step = 1 and collect_size = 6000
                                   # each train_step will sample a batch from buffer
