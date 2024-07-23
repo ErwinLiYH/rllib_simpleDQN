@@ -349,7 +349,7 @@ class SimpleQ(Algorithm):
         ]
         
         if cur_ts > self.config.num_steps_sampled_before_learning_starts:
-            for _ in range(self.config.train_times_per_step * self.config.collect_size):
+            for _ in range(int(self.config.train_times_per_step * self.config.collect_size)):
                 # Use deprecated replay() to support old replay buffers for now
                 train_batch = self.local_replay_buffer.sample(batch_size)
 
